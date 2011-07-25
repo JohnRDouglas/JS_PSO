@@ -1,0 +1,10 @@
+c:\users\slimey\documents\visual studio 2010\Projects\JS_PSO\JS_PSO\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\slimey\documents\visual studio 2010\Projects\JS_PSO\JS_PSO\obj\x86\Debug\JS_PSO.Properties.Resources.resources
+c:\users\slimey\documents\visual studio 2010\Projects\JS_PSO\JS_PSO\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\slimey\documents\visual studio 2010\Projects\JS_PSO\JS_PSO\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\slimey\documents\visual studio 2010\Projects\JS_PSO\JS_PSO\bin\Debug\JS_PSO.exe
+c:\users\slimey\documents\visual studio 2010\Projects\JS_PSO\JS_PSO\bin\Debug\JS_PSO.pdb
+c:\users\slimey\documents\visual studio 2010\Projects\JS_PSO\JS_PSO\obj\x86\Debug\JS_PSO.exe
+c:\users\slimey\documents\visual studio 2010\Projects\JS_PSO\JS_PSO\obj\x86\Debug\JS_PSO.pdb
+c:\users\slimey\documents\visual studio 2010\Projects\JS_PSO\JS_PSO\obj\x86\Debug\JS_PSO.Form1.resources
+c:\users\slimey\documents\visual studio 2010\Projects\JS_PSO\JS_PSO\obj\x86\Debug\JS_PSO.SwarmView.resources

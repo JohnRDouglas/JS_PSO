@@ -1,0 +1,1 @@
+JS_PSO is my sandbox for Particle Swarm Optimization in C#.
