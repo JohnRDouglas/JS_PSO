@@ -109,6 +109,14 @@ namespace JS_PSO {
             }
         }
 
+        public double BestFitness
+        {
+            get
+            {
+                return myBestFitness;
+            }
+        }
+
         public double[] Posits
         {
             get {

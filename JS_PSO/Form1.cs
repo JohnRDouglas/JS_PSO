@@ -20,7 +20,6 @@ namespace JS_PSO {
             myPSOContext = new PSOContext(30, 2, .25, new double[] { swarmView1.Width, swarmView1.Height }, new double[] { 0, 0 });
             swarmView1.init(ref myPSOContext);
             PSOThread = new Thread(new ThreadStart(RunPSO));
-            PSOThread.Start();
         }
 
         private void swarmView1_Load(object sender, EventArgs e)
@@ -47,11 +46,16 @@ namespace JS_PSO {
             do {
                 for (int i = 0; i < myScores.Length; i++) {
                     myScores[i] = FitnessFunction(myPSOContext.Particles[i].Posits);
+                    myPSOContext.Particles[i].Fitness = myScores[i];
+                    if (myScores[i] <= 0.001)
+                        return;
                 }
 
-                myPSOContext.iterate(myScores);
-                RefreshSwarmView();
+                // Exit criteria would go here
 
+                myPSOContext.iterate(myScores);
+
+                RefreshSwarmView();
                 Thread.Sleep(30);
             } while (true);
         }
@@ -65,6 +69,15 @@ namespace JS_PSO {
         {
             if (PSOThread != null && PSOThread.IsAlive)
                 PSOThread.Abort();
+        }
+
+        private void ResetButton_Click(object sender, EventArgs e)
+        {
+            myPSOContext.ResetParticles(true);
+            if (PSOThread.IsAlive == false) {
+                PSOThread = new Thread(new ThreadStart(RunPSO));
+                PSOThread.Start();
+            }
         }
     }
 }

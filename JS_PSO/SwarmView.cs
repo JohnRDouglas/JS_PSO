@@ -63,6 +63,9 @@ namespace JS_PSO {
             }
 
             e.Graphics.DrawEllipse(targetPen, new Rectangle(new Point(targetPoint.X - 2, targetPoint.Y - 2), s));
+
+            e.Graphics.DrawString("Best Fitness: " + myContext.GlobalBest.BestFitness.ToString("0.000"), new Font("Airal", 10), Brushes.Green, 10, 10);
+
         }
 
         private void SwarmView_Click(object sender, EventArgs e)

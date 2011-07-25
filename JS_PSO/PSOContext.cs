@@ -56,7 +56,23 @@ namespace JS_PSO {
             myBestFitness = double.PositiveInfinity;
 
             for (int i = 0; i < myParticles.Length; i++) {
-                myParticles[i].ResetParticle();
+                myParticles[i].ResetParticle(ResetPosits);
+            }
+        }
+
+        public PSOParticle GlobalBest
+        {
+            get
+            {
+                return myGlobalBest;
+            }
+        }
+
+        public double BestFitness
+        {
+            get
+            {
+                return myGlobalBest.BestFitness;
             }
         }
 
